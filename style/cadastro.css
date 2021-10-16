@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.campoCadastro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    max-width: 600px;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.campoCadastro h2{
+    color: rgb(1, 59, 66);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.formC{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border: none;
+    color: rgb(88, 88, 88);
+    border-bottom: 2px solid rgb(45, 125, 145);
+}
+
+.btCadastro{
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background:rgb(13, 31, 131);
+    border-radius: 10px;
+    cursor: pointer;
+}

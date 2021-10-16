@@ -5,12 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.campoPrincipal{
+.campoLogin{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.945);
+    /*background-color: rgba(0, 0, 0, 0.945);*/
+    background-color: rgba(7, 13, 49, 0.884);
     color: white;
     height: 45%;
     width: 80%;
@@ -21,16 +22,15 @@
     border-radius: 20px;
 }
 
-h2{
+.h2Login{
     font-size: 35px;
     margin: 4px;
-    margin-top: 7px;
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
 input{
     width: 90%;
-    
     height: 15%;
     border-radius: 40px;
     font-size: 20px;
