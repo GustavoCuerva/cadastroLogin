@@ -35,6 +35,7 @@
     border: none;
     color: rgb(88, 88, 88);
     border-bottom: 2px solid rgb(45, 125, 145);
+    outline: none;
 }
 
 .btCadastro{
@@ -44,4 +45,27 @@
     background:rgb(13, 31, 131);
     border-radius: 10px;
     cursor: pointer;
+}
+
+.labelInput{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    pointer-events: none;
+    color: rgb(88, 88, 88);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.formC:focus ~ .labelInput, 
+.formC:valid ~ .labelInput{
+    transition: .5s;
+    top: 35px;
+    left: 15px;
+    font-size: 15px;
+    color: rgb(45, 125, 145);
 }
