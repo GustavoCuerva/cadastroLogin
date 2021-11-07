@@ -1,3 +1,21 @@
+<?php
+
+
+if(isset($_POST['submit'])){
+
+  include_once('config.php');
+
+  $nome = $_POST['nome'];
+  $email = $_POST['emailC'];
+  $senha = $_POST['senhaC'];
+
+  $result = mysqli_query($conexao, "INSERT INTO dadosusuario(nome,email,senha) 
+  VALUES ('$nome','$email','$senha')");
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -8,7 +26,7 @@
     <title>Cadastro do Usuário</title>
   </head>
   <body>
-    <form class="campoCadastro">
+  <form action="cadastro.php" method="post" class="campoCadastro">
       <h2>Insira seus dados</h2>
       <div class="inputBox">
         <input type="text" name="nome" id="nome" class="nome formC" required>
@@ -22,9 +40,7 @@
         <input type="password" name="senhaC" id="senha" class="senhaC formC" required>
         <label for="senha" class="labelInput">Sua senha</label>
       </div>
-      <a href="index.html"
-        ><input type="button" value="Cadastrar-se" class="btCadastro"
-      /></a>
+      <input type="submit" name="submit" value="Cadastrar-se" class="btCadastro"/>
     </form>
     <script src="JS/script.js"></script>
   </body>
