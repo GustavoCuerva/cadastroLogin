@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="campoLogin">
+    <form action="testeLogin.php" method="post" class="campoLogin">
         <h2 class="h2Login">Login</h2>
         <input type="email" name="email" placeholder="Email" class="email campoFormL"/>
         <input type="password" name="senha" placeholder="Senha" class="senha campoFormL"/>
-        <input type="button" value="Login" class="btLogin"/>
+        <input type="submit" name="submit" value="Login" class="btLogin"/>
         <a href="cadastro.php">Cadastrar-se</a>
-    </div>
+    </form>
 </body>
 </html>
