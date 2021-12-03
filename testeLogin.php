@@ -1,5 +1,5 @@
 <?php
-    
+    session_start();
     if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha'])){
         //acessa
         include_once('config.php');
@@ -13,9 +13,15 @@
         //print_r($result);
 
         if(mysqli_num_rows($result)<1){
-            print_r('Não existe');
+            //Não existe o login no bd
+            unset($_SESSION['email']);
+            unset($_SESSION['senha']);
+            header('Location: index.php');
         }else if(mysqli_num_rows($result)>0){
-            print_r('Existe');         
+            //Existe o login no bd
+            $_SESSION['email'] = $email;
+            $_SESSION['senha'] = $senha;
+            header('Location: sistema.php');
         }
     }else{
         //não acessa
