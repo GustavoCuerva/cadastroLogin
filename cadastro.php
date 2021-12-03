@@ -11,6 +11,7 @@ if(isset($_POST['submit'])){
 
   $result = mysqli_query($conexao, "INSERT INTO dadosusuario(nome,email,senha) 
   VALUES ('$nome','$email','$senha')");
+  header('Location: index.php');
 }
 
 
