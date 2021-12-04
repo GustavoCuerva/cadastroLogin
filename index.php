@@ -13,7 +13,7 @@
         <input type="email" name="email" placeholder="Email" class="email campoFormL"/>
         <input type="password" name="senha" placeholder="Senha" class="senha campoFormL"/>
         <input type="submit" name="submit" value="Login" class="btLogin"/>
-        <a href="cadastro.php">Cadastrar-se</a>
+        <a href="cadastro.php" class="cadastro">Cadastrar-se</a>
     </form>
 </body>
 </html>
