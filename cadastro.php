@@ -1,13 +1,15 @@
 <?php
 
+$cadastro = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRIPPED);
 
-if(isset($_POST['submit'])){
+if(isset($cadastro['submit'])){
 
   include_once('config.php');
 
-  $nome = $_POST['nome'];
-  $email = $_POST['emailC'];
-  $senha = $_POST['senhaC'];
+
+  $nome = $cadastro['nome'];
+  $email = $cadastro['emailC'];
+  $senha = md5($cadastro['senhaC']);
 
   $result = mysqli_query($conexao, "INSERT INTO dadosusuario(nome,email,senha) 
   VALUES ('$nome','$email','$senha')");

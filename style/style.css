@@ -70,3 +70,12 @@ input{
     background-color: rgb(255, 255, 255);
     color: black;
 }
+.check-box{
+    width: 50px;
+}
+
+.lembre-se{
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+}
